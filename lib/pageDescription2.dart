@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'pageDescription1.dart';
+import 'pageDescription3.dart';
 import 'albums.dart';
 
-class PageDescription extends StatelessWidget {
+class PageDescription2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +11,7 @@ class PageDescription extends StatelessWidget {
           actions: <Widget>[
             new IconButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context){
-                return PageDescription1();
+                return PageDescription3();
               }));
             }, icon: new Icon(Icons.arrow_right_alt_rounded))
           ],
@@ -20,13 +20,13 @@ class PageDescription extends StatelessWidget {
           padding: const EdgeInsets.all(64),
           children: <Widget>[
             Center(
-                child: const Text('black midi - Cavalcade (2021)')
+                child: const Text('Jorge Ben - África Brasil (1979)')
             ),
             Center(
-                child: const Text('Gêneros: Avant-Prog, Math-Rock')
+                child: const Text('Gêneros: Samba-Rock, Funk')
             ),
             Center(
-                child: const Text('\nNovo lançamento da banda britânica Black Midi - Sons catárticos e ritmos hipnotizantes definem a banda black midi e seu novo lançamento expande essas características em um nível nunca antes visto.')
+                child: const Text('\nPrimeiro álbum da fase da guitarra elétrica do renomado cantor e compositor de samba Jorge Ben - Jorge Ben adota a guitarra elétrica e uma banda de rock para fazer uma mistura carismática de Samba, Rock e Funk.')
             ),
             Center(
                 child: new IconButton(onPressed: () {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'pageDescription1.dart';
+import 'pageDescription2.dart';
 import 'albums.dart';
 
-class PageDescription extends StatelessWidget {
+class PageDescription1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +11,7 @@ class PageDescription extends StatelessWidget {
           actions: <Widget>[
             new IconButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context){
-                return PageDescription1();
+                return PageDescription2();
               }));
             }, icon: new Icon(Icons.arrow_right_alt_rounded))
           ],
@@ -20,13 +20,13 @@ class PageDescription extends StatelessWidget {
           padding: const EdgeInsets.all(64),
           children: <Widget>[
             Center(
-                child: const Text('black midi - Cavalcade (2021)')
+                child: const Text('TTNG - 13.0.0.0.0 (2013)')
             ),
             Center(
-                child: const Text('Gêneros: Avant-Prog, Math-Rock')
+                child: const Text('Gêneros: Math-Rock, Indie Rock')
             ),
             Center(
-                child: const Text('\nNovo lançamento da banda britânica Black Midi - Sons catárticos e ritmos hipnotizantes definem a banda black midi e seu novo lançamento expande essas características em um nível nunca antes visto.')
+                child: const Text('\nPrimeiro lançamento da nova formação da banda de Math Rock TTNG - Com o novo vocalista e baixista Henry Tremain, TTNG expande seu som para um lado mais suave e limpo.')
             ),
             Center(
                 child: new IconButton(onPressed: () {

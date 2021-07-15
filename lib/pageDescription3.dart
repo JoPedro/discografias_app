@@ -1,32 +1,24 @@
 import 'package:flutter/material.dart';
-import 'pageDescription1.dart';
 import 'albums.dart';
 
-class PageDescription extends StatelessWidget {
+class PageDescription3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
           title: new Text('Informações sobre os Discos'),
-          actions: <Widget>[
-            new IconButton(onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context){
-                return PageDescription1();
-              }));
-            }, icon: new Icon(Icons.arrow_right_alt_rounded))
-          ],
         ),
         body: new ListView(
           padding: const EdgeInsets.all(64),
           children: <Widget>[
             Center(
-                child: const Text('black midi - Cavalcade (2021)')
+                child: const Text('Radiohead - In Rainbows (2007)')
             ),
             Center(
-                child: const Text('Gêneros: Avant-Prog, Math-Rock')
+                child: const Text('Gêneros: Alt-rock, Art Pop')
             ),
             Center(
-                child: const Text('\nNovo lançamento da banda britânica Black Midi - Sons catárticos e ritmos hipnotizantes definem a banda black midi e seu novo lançamento expande essas características em um nível nunca antes visto.')
+                child: const Text('\nUm das obras-primas da banda - Radiohead em 2007 lançam In Rainbows primeiro em um serviço pay-what-you-want na Internet, assim inspirando sites como Bandcamp.')
             ),
             Center(
                 child: new IconButton(onPressed: () {
